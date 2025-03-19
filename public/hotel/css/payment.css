@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+.payment-form {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+.payment-methods {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.payment-methods label {
+    cursor: pointer;
+}
+.payment-methods img {
+    width: 80px;
+    height: auto;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+.form-group input, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.btn-submit {
+    background-color: #2ecc71;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+.amount-summary {
+    margin-bottom: 20px;
+}
+
+.subtotal {
+    background-color: #f9f9f9; /* Light grey background for Subtotal */
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow */
+}
+
+.total-amount {
+    background-color: #e0f7fa; /* Light teal background for Total Amount */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow */
+}
+
+.total-amount h3 {
+    margin: 0;
+    color: #00796b; /* Darker text color for the total */
+}
+
+/* Container for the save details checkbox */
+.save-details {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Customize the label for the checkbox */
+.save-details label {
+    font-size: 14px;
+    color: #333;
+    display: flex;  /* Ensures checkbox and text are inline */
+    align-items: center; /* Vertically aligns checkbox with the text */
+    cursor: pointer;
+}
+
+/* Style for the default checkbox */
+.save-details input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px; /* Adds space between checkbox and text */
+    cursor: pointer;
+}
+
+/* Optional: Customize the checkbox style */
+.save-details input[type="checkbox"] {
+    -webkit-appearance: none; /* Remove default style */
+    appearance: none;
+    background-color: #f0f0f0;
+    border: 2px solid #ccc;
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+}
+
+/* Checkbox checked state with a custom checkmark */
+.save-details input[type="checkbox"]:checked {
+    background-color: #4caf50;
+    border-color: #4caf50;
+}
+
+.save-details input[type="checkbox"]:checked::after {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 5px;
+    width: 5px;
+    height: 9px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}

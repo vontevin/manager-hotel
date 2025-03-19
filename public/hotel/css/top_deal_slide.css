@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+/* Spinner Start */
+.spinner-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 9999;
+}
+
+.spinner {
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #3498db;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 0.02s linear infinite; /* វិលលឿន 0.05 វិនាទី */
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+/* Spinner End */
+.deal-pricing {
+  font-size: 18px;
+  margin-bottom: 5px;
+  padding: 10px;
+  border-radius: 5px;         /* Rounded corners */
+  display: inline-block;      /* Ensure proper layout */
+  background-color: #c67a64;  /* Background color inside the border */
+}
+
+.deal-price {
+  color: #f39c12;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.deal-original-price {
+  text-decoration: line-through;
+  color: #999;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+/* Roomtype */
+.body-item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.card-list .card-item .card-link{
+  user-select: none;
+  display: block;
+  background-color: #ecdfd7;
+  padding: 18px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.card-list .card-item .card-link:hover{
+  transform: translateY(-5px);
+}
+.card-list .card-link .card-image{
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card-list .card-link .badge{
+  color: #5372F0;
+  padding: 8px 16px;
+  font-size: 0.95;
+  font-weight: 500;
+  margin: 16px 0 18px;
+  background: #DDE4FF;
+  width: fit-content;
+  border-radius: 50px;
+}
+
+.card-list .card-link .card-title
+{
+  font-size: 1rem;
+  color: #000000e4;
+  font-weight: 600;
+}
+.card-list .card-link .card-button
+{
+  height: 35px;
+  width: 35px;
+  color: #5372F0;
+  border-radius: 50%;
+  margin: 30px 0 5px;
+  background: none;
+  cursor: pointer;
+  border: 2px solid #5372F0;
+  transform: rotate(-45deg);
+}
+
+.card-wrapper{
+  max-width: 1100px;
+  margin: 0 60px 35px;
+  padding: 20px 10px;
+  overflow: hidden;
+}
+/* End Roomtype */
+
+.deals-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.deals-title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #1b2d45;
+}
+
+.deals-carousel {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  overflow-x: auto;
+  padding-bottom: 20px;
+}
+
+.deal-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 30%;
+  min-width: 300px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  position: relative;
+}
+
+.deal-card:hover {
+  transform: translateY(-5px);
+}
+
+.deal-image-container {
+  position: relative;
+}
+
+.deal-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.deal-badge {
+  background-color: #e74c3c;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  position: absolute;
+  top: 5px;
+  left: 15px;
+}
+
+.deal-content {
+  padding: 15px;
+}
+
+.deal-location {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 5px;
+}
+
+.deal-hotel-name {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.deal-rating {
+  font-size: 16px;
+  color: #f39c12;
+  margin-bottom: 10px;
+}
+
+.deal-pricing {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.deal-price {
+  color: #f39c12;
+  font-weight: bold;
+}
+
+.deal-original-price {
+  text-decoration: line-through;
+  color: #999;
+  margin-left: 10px;
+}
+
+.deal-book-button {
+  display: inline-block;
+  background-color: #2980b9;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.deal-book-button:hover {
+  background-color: #1a6d9c;
+}
+.deal-rating {
+  position: relative;
+  display: block; /* Full width of the card */
+  font-size: 24px; /* Adjust the size of the stars */
+  color: gold; /* Color for the stars */
+  padding-bottom: 10px; /* Space between stars and the bottom line */
+}
+
+.deal-rating::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%; /* Full width line */
+  height: 2px; /* Thickness of the line */
+  background-color: rgba(0, 0, 0, 0.13); /* Color for the bottom line */
+}
+
+.rating-text {
+  font-size: 14px; /* Adjust text size as needed */
+  color: #55555594; /* Text color */
+  margin-top: 5px; /* Space between stars and text */
+}
+/* Room */
+
+/* User */
+    /* General Navbar Styles */
+    .navbar-right {
+      margin-right: 15px;
+  }
+  
+  .navbar-nav {
+      margin: 0;
+  }
+  
+  .user-profile {
+      display: flex;
+      align-items: center;
+      color: #333;
+      text-decoration: none;
+  }
+  
+  .user-profile img {
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+  }
+  
+  /* Dropdown Menu Styles */
+  .dropdown-menu {
+      border: none;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      padding: 10px 0;
+      background-color: #ffffff; /* Set a neutral background color */
+  }
+  
+  .dropdown-menu a {
+      color: #333;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      padding: 10px 15px;
+  }
+  
+  .dropdown-menu a:hover {
+      background-color: #ff0000; /* Set the hover background color to red */
+      color: #ffffff; /* Optionally, change text color to white on hover for contrast */
+  }
+  
+  .dropdown-menu img {
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+  }
+  
+  /* Styling the Dropdown Toggle */
+  .dropdown-toggle::after {
+      display: none;
+  }
+  
+  .user-profile span {
+      margin-left: 5px;
+      font-size: 20px;
+  }
+  
+  /* Making sure the dropdown is positioned correctly */
+  .dropdown-usermenu {
+      right: 0;
+      left: auto;
+  }
+  
+  /* Additional Styles for Logout Form */
+  #logout-form {
+      display: none;
+  }
+  .user-name {
+      /* Style for the user name displayed after registration */
+      color: #333;
+      text-decoration: none;
+      font-size: 40px;
+      font-weight: bold;
+  }
+  
+  .user-name:hover {
+      /* Hover effect for the user name */
+      color: #ff0000; /* Red color on hover */
+      text-decoration: underline; /* Optional: Underline the text on hover */
+  }

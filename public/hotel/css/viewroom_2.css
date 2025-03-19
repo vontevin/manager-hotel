@@ -1,0 +1,109 @@
+/* General Navbar Styles */
+.navbar-right {
+    margin-right: 15px;
+}
+
+.navbar-nav {
+    margin: 0;
+}
+
+/* User Profile Styles */
+.user-profile {
+    display: flex;
+    align-items: center;
+    color: #333;
+    text-decoration: none;
+}
+
+.user-profile img {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.user-profile span {
+    margin-left: 5px;
+    font-size: 20px;
+}
+
+/* Dropdown Menu Styles */
+.dropdown-menu {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px 0;
+    background-color: #ffffff; /* Neutral background color */
+    position: absolute; /* Ensure dropdown appears correctly */
+    right: 0; /* Align with the right side */
+    z-index: 1000; /* Make sure it stays above other elements */
+}
+
+.dropdown-menu a {
+    color: #333;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease; /* Smooth transition for hover */
+}
+
+.dropdown-menu a:hover {
+    background-color: #ff0000; /* Hover background color */
+    color: #ffffff; /* Change text color for contrast */
+}
+
+.dropdown-menu img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+/* Styling the Dropdown Toggle */
+.dropdown-toggle::after {
+    display: none; /* Hide the default toggle indicator */
+}
+
+/* Additional Styles for Logout Form */
+#logout-form {
+    display: none;
+}
+
+/* User Name Styles */
+.user-name {
+    color: #333;
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.user-name:hover {
+    color: #ff0000; /* Red color on hover */
+    text-decoration: underline; /* Underline text on hover */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .navbar-right {
+        margin-right: 10px; /* Adjust margin for smaller screens */
+    }
+
+    .user-name {
+        font-size: 30px; /* Reduce font size on smaller screens */
+    }
+
+    .user-profile span {
+        font-size: 18px; /* Adjust font size for profile span */
+    }
+
+    /* Adjust dropdown menu position and size for mobile */
+    .dropdown-menu {
+        right: -15px; /* Adjust to align better on smaller screens */
+        width: 100%; /* Full width on smaller screens */
+        box-shadow: none; /* Remove shadow for a cleaner look */
+    }
+
+    .dropdown-menu a {
+        padding: 10px; /* Smaller padding for touch devices */
+    }
+}

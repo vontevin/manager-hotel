@@ -1,0 +1,378 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+/* Container for the main content */
+.conta {
+    width: 80%; /* Default width for larger screens */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row; /* Default to row layout */
+    padding: 20px 0;
+}
+
+/* Room Image Styles */
+.room-image {
+    width: 60%; /* Default width for room image */
+}
+
+.room-image img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 40%; /* Default width for sidebar */
+    padding-left: 20px;
+}
+
+/* Booking Box Styles */
+.booking-box {
+    background-color: #f3e8da; /* Light background color */
+    padding: 20px; /* Inner padding */
+    border-radius: 8px; /* Rounded corners */
+    margin-bottom: 20px; /* Space below booking box */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.booking-box select,
+.booking-box input[type="text"],
+.booking-box input[type="email"],
+.booking-box input[type="tel"],
+.booking-box input[type="date"],
+.booking-box button {
+    width: 100%; /* Full width */
+    padding: 10px; /* Inner padding */
+    margin-top: 10px; /* Space above fields */
+    border-radius: 5px; /* Rounded corners */
+    border: 1px solid #ccc; /* Border color */
+    box-sizing: border-box; /* Include padding and border in width */
+}
+
+/* Button Styles */
+.booking-box button {
+    background-color: #b58a57; /* Button background color */
+    color: white; /* Button text color */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s; /* Smooth transition on hover */
+}
+
+.booking-box button:hover {
+    background-color: #a07445; /* Darker shade on hover */
+}
+
+/* Section Title Styles */
+.section-title {
+    font-size: 24px; /* Font size for section title */
+    font-weight: bold; /* Bold text */
+    margin-bottom: 10px; /* Space below title */
+    text-align: center; /* Center align title */
+}
+
+/* Room Facilities and Hotel Rules */
+.room-facilities,
+.hotel-rules {
+    margin-top: 30px;
+}
+
+.facilities-icons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.facility-item {
+    text-align: center;
+}
+
+.facility-item img {
+    width: 40px; /* Facility icon size */
+}
+
+/* Hotel Rules List */
+.hotel-rules ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.hotel-rules ul li {
+    padding: 5px 0;
+}
+
+.hotel-rules ul li::before {
+    content: "✔";
+    color: green;
+    padding-right: 8px;
+}
+
+/* Input and Button Styles */
+label {
+    display: block; /* Labels on separate lines */
+    margin-top: 10px; /* Space above the label */
+    font-size: 14px; /* Consistent font size */
+}
+
+input[type="text"],
+input[type="date"],
+select {
+    width: 100%; /* Make the inputs full width */
+    padding: 10px; /* Padding inside inputs */
+    margin-top: 5px; /* Space between label and input */
+    border-radius: 5px; /* Rounded input edges */
+    border: 1px solid #ccc; /* Light border color */
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+    font-size: 14px; /* Consistent font size */
+    background-color: #fff; /* White background */
+    color: #333; /* Darker text color */
+}
+
+/* General Button Styles */
+button {
+    width: 100%; /* Full width button */
+    padding: 12px; /* Padding inside the button */
+    margin-top: 15px; /* Space above the button */
+    border-radius: 5px; /* Rounded button corners */
+    border: none; /* No border */
+    background-color: #b58a57; /* Main button color */
+    color: white; /* White text color */
+    font-size: 16px; /* Slightly larger font for button text */
+    cursor: pointer; /* Pointer cursor for clickable button */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+button:hover {
+    background-color: #a57a47; /* Darker button color on hover */
+}
+
+/* Facilities Icons Styles */
+.facilities-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.facility-item {
+    text-align: center;
+    flex-basis: 22%; /* Set width for each item to take 22% of the row */
+    margin-bottom: 20px; /* Add spacing between rows */
+    border: 1px solid #ddd; /* Light border for separation */
+    border-radius: 5px; /* Slightly rounded corners */
+    padding: 10px; /* Add some padding */
+    transition: box-shadow 0.3s ease; /* Transition for shadow effect */
+}
+
+.facility-item i {
+    font-size: 20px; /* Adjust the size as needed */
+    color: #a07b52; /* Icon color */
+    margin-bottom: 5px;
+}
+
+.facility-item p {
+    margin-top: 5px;
+    font-size: 14px; /* Adjust text size as needed */
+    color: #333;
+}
+
+/* Hover Effects */
+.facility-item:hover i {
+    color: #d1b084; /* Change icon color on hover */
+    transform: scale(1.1); /* Slightly enlarge the icon */
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+.facility-item:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add shadow on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .facility-item {
+        flex-basis: 45%; /* Adjust for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .facility-item {
+        flex-basis: 100%; /* Stack items on very small screens */
+    }
+}
+
+
+/* Carousel Styles */
+.carousel-container {
+    position: relative;
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-images img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Carousel Navigation Buttons */
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.7); /* Light background */
+    color: #333; /* Dark text color for contrast */
+    padding: 10px;
+    cursor: pointer;
+    border: 2px solid #ccc; /* Border for visibility */
+    border-radius: 50%; /* Circular shape */
+    font-size: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly darker background on hover */
+    color: #000; /* Change text color on hover */
+    border-color: #999; /* Darker border on hover */
+}
+
+/* Dot Navigation Styles */
+.owl-dots {
+    display: flex;
+    justify-content: center; /* Centers the dots horizontally */
+    align-items: center; /* Aligns the dots vertically (if needed) */
+    gap: 10px; /* Adds space between dots */
+    margin-bottom: 12px;
+}
+
+.owl-dot {
+    display: flex;
+    width: 12px;
+    height: 12px;
+    background-color: #ccc;  /* Default dot color */
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.owl-dot.active {
+    background-color: #ff0000; /* Active dot color */
+}
+
+/* Payment Card Styles */
+.payment-icons {
+    display: flex; /* Align icons in a row */
+    gap: 55px; /* Add space between icons */
+    justify-content: center; /* Center the icons horizontally */
+    align-items: center; /* Vertically align icons */
+}
+
+.payment-btn {
+    display: inline-block;
+    padding: 5px; /* Padding inside the button */
+    border: 2px solid rgba(165, 136, 136, 0.103); /* Border around the image */
+    border-radius: 8px; /* Rounded corners */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.payment-btn img {
+    width: 60px; /* Adjust the size of the images */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.payment-btn:hover {
+    border-color: #007bff; /* Border color change on hover */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+.payment-btn:focus {
+    outline: none; /* Remove default focus outline */
+}
+
+/* Room Price Styles */
+.custom-iteam {
+    border: 1px solid #ddd; /* Optional container border */
+    border-radius: 8px;
+    background-color: #d09696; /* Background color */
+    padding: 5px;
+    height: 50px; /* Limit the height for overflow */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    font-family: 'Arial', sans-serif;
+    color: #000000; /* Text color */
+    width: 150px; /* Width of the price container */
+    font-size: 15px; /* Font size */
+    text-align: center; /* Center text */
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .conta {
+        flex-direction: column; /* Column layout for tablets */
+        width: 90%; /* Slightly wider for tablets */
+    }
+
+    .room-image {
+        width: 100%; /* Full width on tablets */
+    }
+
+    .sidebar {
+        width: 100%; /* Full width sidebar on tablets */
+        padding-left: 0; /* Remove padding */
+    }
+}
+
+@media (max-width: 768px) {
+    .conta {
+        flex-direction: column; /* Change to column layout on smaller screens */
+        width: 100%; /* Full width for mobile */
+    }
+
+    .room-image {
+        width: 100%; /* Full width on mobile */
+    }
+
+    .sidebar {
+        width: 100%; /* Full width sidebar on mobile */
+        padding-left: 0; /* Remove padding */
+    }
+
+    /* Adjust booking box styles */
+    .booking-box {
+        padding: 15px; /* Reduced padding for mobile */
+    }
+
+    .booking-box button {
+        padding: 10px; /* Smaller button padding */
+    }
+
+    /* Facilities icons */
+    .facility-item {
+        flex-basis: 48%; /* Adjust width for smaller screens */
+        margin-bottom: 10px; /* Reduced margin */
+    }
+
+    .payment-icons {
+        flex-direction: column; /* Stack payment icons */
+        gap: 20px; /* Adjust gap */
+    }
+    
+}

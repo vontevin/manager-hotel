@@ -1,0 +1,112 @@
+.colored-toast {
+    font-size: 14px; /* Adjust font size as needed */
+    padding: 15px; /* Adjust padding as needed */
+    border-radius: 5px; /* Optional: adjust border radius */
+    background-color: hsla(134, 41%, 88%, 0.629); /* Light green color for success */
+    color: #155724; /* Dark green color for text */
+}
+
+.nav-md {
+    font-family: Hanuman, 'Times New Roman' !important;
+    font-weight: 400;
+}
+
+.colored-toast.swal2-icon-success {
+    background-color: #a5dc86 !important;
+}
+
+.colored-toast.swal2-icon-error {
+    background-color: #f27474 !important;
+}
+
+.colored-toast.swal2-icon-warning {
+    background-color: #f8bb86 !important;
+}
+
+.colored-toast.swal2-icon-info {
+    background-color: #3fc3ee !important;
+}
+
+.colored-toast.swal2-icon-question {
+    background-color: #87adbd !important;
+}
+
+.colored-toast .swal2-title {
+    color: white;
+}
+
+.colored-toast .swal2-close {
+    color: white;
+}
+
+.colored-toast .swal2-html-container {
+    color: white;
+}
+
+.ff {
+    border: 2px solid rgb(216, 216, 237);
+    padding: 12px;
+    background: #405467;
+    color: aliceblue;
+}
+
+/* Icon */
+.room-facilities {
+    margin-top: 20px;
+}
+
+.facilities-icons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 icons per row */
+    gap: 10px; /* Space between icons */
+    margin-top: 10px;
+}
+
+.facility-item {
+    text-align: center;
+}
+
+.facility-item img {
+    width: 40px;
+}
+.x_panel {
+    font-family: Hanuman, 'Times New Roman' !important;
+    font-weight: 400;
+    font-size: 12px;
+}
+.icon-item {
+    color: rgb(145, 89, 89);
+}
+.icon-ite {
+    color: red;
+}
+.table-header {
+    background-color: #405467; /* Light gray for header */
+    font-weight: bold;
+    font-size: 14px;
+    border-bottom: 12px solid #ddd;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.col-name {
+    width: 70px;
+}
+
+.col-email {
+    width: 65px;
+}
+
+.col-roomType {
+    width: 70px;
+}
+
+.col-checkIn,
+.col-checkOut,
+.col-status,
+.col-action {
+    min-width: 70px;
+    white-space: nowrap; /* Prevent wrapping */
+}
